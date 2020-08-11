@@ -1,0 +1,48 @@
+<style>
+.txt:hover {
+    border-top: 1.5px solid black;
+    border-bottom: 1.5px solid black;
+    padding: 0 0 2px;
+    transition: 0.1s;
+}
+
+input[type=text ]{
+background:none;
+padding:5px 15px;
+border:none;
+border-bottom: 2px solid black;
+outline:0px;
+
+}
+
+.search button{
+font-size:17px;
+color:black;
+background: none;
+border:none;
+border-bottom: 2px solid black;
+padding:5px 10px;
+padding-bottom: 12px;
+margin-left:-4px;
+outline:0px;
+
+}
+
+
+
+</style>
+
+<nav class="site-navigation text-right text-md-center" role="navigation">
+    <div class="container">
+        <ul class="site-menu js-clone-nav d-none d-md-block" style="padding: 0;">
+            <li><a href="/"><span class="txt">Home</span></a></li>
+            <li><a href="{% url 'cart:product-list' %}"><span class="txt">Shop</span></a></li>
+            <li><a href="{% url 'contact' %}"><span class="txt">Contact</span></a></li>
+            {% if request.user.is_staff %}
+                <li><a href="{% url 'staff:staff' %}"><span class="txt">Staff</span></a></li>
+            {% endif %}
+            <li class="search"><form method="GET"><input type="text" placeholder="Search" name="search">
+                <button class="fas fa-search" type="submit"></button></form></li>
+        </ul>
+    </div>
+</nav>
