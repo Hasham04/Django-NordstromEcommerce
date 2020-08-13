@@ -25,8 +25,8 @@ INSTALLED_APPS = [
     'staff'
 ]
 
-DEFAULT_FROM_EMAIL = 'hasham610@gmail.com'
-NOTIFY_EMAIL = 'hasham610@gmail.com'
+DEFAULT_FROM_EMAIL = ''
+NOTIFY_EMAIL = ''
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
@@ -103,8 +103,8 @@ STATIC_ROOT = os.path.join(BASE_DIR, "static_root")
 MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, "media")
 
-PAYPAL_CLIENT_ID = 'AX2YkGhYI41w6JowDxpqVcaKyzl90ZQxUF5zqw02ruhohKDz9c_SPsy7v-A5t_S3oTG5Y2DM2meqcSmR'
-PAYPAL_SECRET_KEY = 'EIZPdT1ZtI7xjuo7r8qCBGSi2EdqmmLr6_qGaSFjxcCgIlO9SrJsMn6mtyshTguj0zhd-deHNKzV4VzD'
+PAYPAL_CLIENT_ID = ''
+PAYPAL_SECRET_KEY = ''
 
 if DEBUG is False:
     SESSION_COOKIE_SECURE = True
@@ -130,5 +130,5 @@ if DEBUG is False:
         }
     }
 
-    PAYPAL_CLIENT_ID = 'AWgNHknwQAXsQFGznVfNuM5TiS0SHHG6aeSP1CZ0ns5RSmbEVcoM54EulE2U2RaOEtC21vZsE_vGuiT6'
-    PAYPAL_SECRET_KEY = 'EFY5KUmxbOCls5xqQkrRnFyk8jhw6Z3NPVtMPkWmgHDwBx_Cqib4u-eQ_7pgC-UWab28K22mVX3fFOUB'
+    PAYPAL_CLIENT_ID = ''
+    PAYPAL_SECRET_KEY = ''
